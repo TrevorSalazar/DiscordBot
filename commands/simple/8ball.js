@@ -17,13 +17,13 @@ class EightBallCommand extends commando.Command
 		var random = Math.floor (Math.random() * number) + 1;
 		switch(random) {
 			case 1: 
-				message.channel.send("not happenin bud");
+				message.channel.send("Not happening bud.");
 				break;
 			case 2: 
-				message.channel.send("hell yeah");
+				message.channel.send("Oh it's happennin'.");
                 break;
             case 3:
-                message.channel.send("great question");
+                message.channel.send("Great question.");
                 break;
             }
     }
