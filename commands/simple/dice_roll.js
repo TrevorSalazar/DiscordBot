@@ -7,7 +7,7 @@ class DiceRollCommand extends commando.Command
             name: 'roll',
             group: 'simple',
             memberName: 'roll',
-            description: 'Rolls a die from 1 to 6'
+            description: 'Rolls a die with specified sides (default sides are 6).'
         });
     }  
 
@@ -17,7 +17,7 @@ class DiceRollCommand extends commando.Command
         if(args == "")
         {
             diceroll = Math.floor(Math.random() * 6) + 1;
-            message.channel.send("You rolled " + diceroll);
+            message.channel.send("You rolled " + diceroll + ".");
             if(diceroll == 1)
             {
                 message.channel.send("Unlucky :cry:")
@@ -31,7 +31,7 @@ class DiceRollCommand extends commando.Command
                 message.channel.send(args + " is not a number.")
             }
             else{
-                message.channel.send("You rolled " + diceroll);
+                message.channel.send("You rolled " + diceroll + ".");
                 if(diceroll == 1)
                 {
                     message.channel.send("Unlucky.")

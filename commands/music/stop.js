@@ -7,7 +7,7 @@ class StopCommand extends commando.Command
             name: 'stop',
             group: 'music',
             memberName: 'stop',
-            description: 'Skips current song in queue.'
+            description: 'Stops playing music and leaves the voice channel.'
         });
     }  
 
